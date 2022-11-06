@@ -1,0 +1,18 @@
+    .header {
+        .score-component {
+            @include flexCenter();
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: white;
+            padding: 10px 17px;
+            border-radius: 8px;
+
+            .score {
+                color: rgb(42, 42, 219);
+            }
+
+            .score-counter {
+                font-size: 2rem
+            }
+        }
+    }

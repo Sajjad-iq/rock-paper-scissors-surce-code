@@ -1,0 +1,25 @@
+.App {
+    .game-wrapper-component {
+        width: 288px;
+        height: 270px;
+        @include flexCenter();
+        justify-content: space-between;
+        flex-direction: column;
+        background-image: url('~/src/assets/svg/bg-pentagon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 240px;
+
+
+        .center-wrapper,
+        .bottom-wrapper {
+            @include flexCenter();
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .bottom-wrapper {
+            width: 75%;
+        }
+    }
+}

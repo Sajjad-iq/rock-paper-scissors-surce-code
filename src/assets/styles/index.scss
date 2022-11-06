@@ -1,0 +1,40 @@
+@use './helpers/colors' as col;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+@import './helpers/mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: linear-gradient(180deg, col.$Radial-Gradient, col.$to);
+}
+
+#root,
+.App {
+    width: 100%;
+    height: 100%;
+    @include flexCenter()
+}
+
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: flex;
+}
+
+@import './pages/home/home';
+@import './layout/header/index';
+@import './helpers/imagesClass';
+@import './helpers/outLines';
+@import './pages/WinnerScreen/index';
+@import './pages/Rules/index';
+@import './pages/App/index';
+@import './MediaQuery/index';

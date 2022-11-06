@@ -1,0 +1,29 @@
+.App {
+    @include Tablet {
+        .role {
+            .wrapper {
+                .close-btn {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+    }
+
+    @include WideTablet {
+
+        .role {
+            .wrapper {
+                .roles-img {
+                    width: 40%;
+                }
+
+                .close-btn {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,166 @@
+.App {
+    @include Tablet {
+        .winner-screen-component {
+            width: 75%;
+            height: 70%;
+
+            .winner-picked-component {
+                height: 225px;
+
+                .you-picked {
+                    font-size: 1.8rem;
+                }
+
+                .picked-img {
+                    width: 150px;
+                    height: 150px;
+                    background-size: 100px;
+                }
+            }
+
+            .you-win-component {
+                .you-win-header {
+                    font-size: 3.8rem;
+                }
+
+                .play-again-button {
+                    width: 300px;
+                    height: 75px;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    @include PortraitTablet {
+        .winner-screen-component {
+
+            .winner-picked-component {
+                height: 275px;
+
+                .you-picked {
+                    font-size: 2rem;
+                }
+
+                .picked-img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .you-win-component {
+                .you-win-header {
+                    font-size: 5rem;
+                }
+
+                .play-again-button {
+                    width: 350px;
+                    height: 85px;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    @include WideTablet {
+
+        .winner-screen-component {
+            width: 90%;
+            height: fit-content;
+
+            .winner-picked-component {
+                height: 185px;
+
+                .you-picked {
+                    font-size: 1.8rem;
+                }
+
+                .picked-img {
+                    width: 125px;
+                    height: 125px;
+                    background-size: 75px;
+                }
+            }
+
+            .you-win-component {
+                align-self: center !important;
+                justify-self: center !important;
+                width: fit-content;
+                position: static;
+
+                .you-win-header {
+                    font-size: 3.5rem;
+                }
+
+                .play-again-button {
+                    width: 300px;
+                    height: 75px;
+                }
+            }
+        }
+    }
+
+    @include LargeLaptop {
+        .winner-screen-component {
+
+            .winner-picked-component {
+                height: 225px;
+
+                .you-picked {
+                    font-size: 2.2rem;
+                }
+
+                .picked-img {
+                    width: 150px;
+                    height: 150px;
+                    background-size: 85px;
+                }
+            }
+
+            .you-win-component {
+
+                .you-win-header {
+                    font-size: 4rem;
+                }
+
+                .play-again-button {
+                    width: 325px;
+                    height: 75px;
+                }
+            }
+        }
+    }
+
+    @include FHDScreen {
+        .winner-screen-component {
+            .winner-picked-component {
+                height: 300px;
+                width: fit-content;
+
+                .you-picked {
+                    font-size: 2.8rem;
+                }
+
+                .picked-img {
+                    width: 200px;
+                    height: 200px;
+                    background-size: 110px;
+                }
+            }
+
+            .you-win-component {
+
+                .you-win-header {
+                    font-size: 6rem;
+                }
+
+                .play-again-button {
+                    width: 450px;
+                    height: 100px;
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+
+}

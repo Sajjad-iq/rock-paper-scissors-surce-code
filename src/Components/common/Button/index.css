@@ -1,0 +1,14 @@
+.button-component {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.button-component .button-label-img {
+    width: 60%;
+}

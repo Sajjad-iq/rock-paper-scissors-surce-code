@@ -1,0 +1,23 @@
+.header-component {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    @include flexCenter();
+
+    .header {
+        width: 75%;
+        @include flexCenter();
+        justify-content: space-between;
+        border-radius: 15px;
+        border: 4px solid col.$Header-Outline;
+        padding: 15px;
+
+        .logo-icon {
+            width: 65px;
+        }
+    }
+}
+
+@import './score/index'

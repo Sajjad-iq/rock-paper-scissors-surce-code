@@ -1,0 +1,29 @@
+.you-win-component {
+    align-self: flex-end;
+    @include flexCenter();
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .you-win-header {
+        font-size: 2.7rem;
+        font-weight: 700;
+        color: white;
+        margin: 15px;
+    }
+
+    .play-again-button {
+        width: 225px;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        @include flexCenter();
+        background-color: white;
+        text-decoration: none;
+        color: black;
+    }
+}

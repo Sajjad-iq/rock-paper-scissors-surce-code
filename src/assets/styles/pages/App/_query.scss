@@ -1,0 +1,32 @@
+#root {
+    @include Tablet {
+        .App {
+            .app-wrapper {
+                .roles-btn {
+                    width: 145px;
+                    height: 75px;
+                    font-size: 2rem;
+                    margin-top: 75px;
+                }
+            }
+        }
+    }
+
+
+    @include WideTablet {
+        .App {
+            .app-wrapper {
+                .roles-btn {
+                    position: absolute;
+                    bottom: 50px;
+                    right: 50px;
+                    width: 125px;
+                    height: 50px;
+                    font-size: 1.6rem;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+}

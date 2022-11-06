@@ -1,0 +1,115 @@
+.App {
+    @include Tablet {
+        .header-component {
+            .header {
+                .logo-icon {
+                    width: 110px;
+                }
+
+                .score-component {
+                    padding: 20px 25px;
+
+                    .score {
+                        font-size: 1.5rem;
+                    }
+
+                    .score-counter {
+                        font-size: 2.8rem
+                    }
+                }
+            }
+        }
+    }
+
+    @include WideTablet {
+        .header-component {
+            .header {
+                .logo-icon {
+                    width: 85px;
+                }
+
+                .score-component {
+                    padding: 10px 15px;
+
+                    .score {
+                        font-size: 1.2rem;
+                    }
+
+                    .score-counter {
+                        font-size: 2rem
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @include BigTablet {
+        .header-component {
+            .header {
+                .logo-icon {
+                    width: 75px;
+                }
+
+                .score-component {
+                    padding: 10px 15px;
+
+                    .score {
+                        font-size: 1.2rem;
+                    }
+
+                    .score-counter {
+                        font-size: 2rem
+                    }
+                }
+            }
+        }
+    }
+
+
+    @include LargeLaptop {
+        .header-component {
+            .header {
+                .logo-icon {
+                    width: 100px;
+                }
+
+                .score-component {
+                    padding: 20px 25px;
+
+                    .score {
+                        font-size: 1.6rem;
+                    }
+
+                    .score-counter {
+                        font-size: 2.5rem
+                    }
+                }
+            }
+        }
+    }
+
+    @include FHDScreen {
+        .header-component {
+            .header {
+                .logo-icon {
+                    width: 125px;
+                }
+
+                .score-component {
+                    padding: 25px 30px;
+
+                    .score {
+                        font-size: 2rem;
+                    }
+
+                    .score-counter {
+                        font-size: 3rem
+                    }
+                }
+            }
+        }
+    }
+
+}
